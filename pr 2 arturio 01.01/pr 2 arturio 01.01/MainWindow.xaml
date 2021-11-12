@@ -1,0 +1,29 @@
+﻿<Window x:Class="pr_2_arturio_01._01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_2_arturio_01._01"
+        mc:Ignorable="d"
+        Title="Практическая работа №2" Height="324" Width="480" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem x:Name="open" Header="Открыть" Click="open_Click"/>
+                <MenuItem x:Name="save" Header="Сохранить" Click="save_Click"/>
+            </MenuItem>
+            <Separator/>
+            <MenuItem x:Name="about" Header="О программе" Click="about_Click"/>
+            <MenuItem x:Name="exit" Header="Выход" Click="exit_Click"/>
+        </Menu>
+        <TextBlock HorizontalAlignment="Left" Margin="19,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Language="ru-ru" Text="Количество элементов: "/></TextBlock>
+        <TextBox x:Name="inputLength" HorizontalAlignment="Left" Margin="155,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Button x:Name="generate" Content="Сгенерировать " HorizontalAlignment="Left" Margin="305,24,0,0" VerticalAlignment="Top" Width="120" Click="generate_Click"/>
+        <DataGrid x:Name="dataGridForArray" VerticalAlignment="Top" Height="180" Margin="20,49,40,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Text="Результат"/><Run Language="ru-ru" Text=": "/></TextBlock>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Margin="80,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" IsReadOnly="True"/>
+        <Button x:Name="calculate" Content="Рассчитать" HorizontalAlignment="Left" Margin="225,239,0,0" VerticalAlignment="Top" Width="95" Click="calculate_Click"/>
+        <Button x:Name="clear" Content="Очистить" HorizontalAlignment="Left" Margin="340,239,0,0" VerticalAlignment="Top" Width="80" Click="clear_Click"/>
+
+    </Grid>
+</Window>
