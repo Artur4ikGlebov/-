@@ -1,0 +1,23 @@
+﻿<Window x:Class="pr_1_arturio_01._01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_1_arturio_01._01"
+        mc:Ignorable="d"
+        Title="Практическая работа №1" Height="344" Width="279" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Команды">
+                <MenuItem x:Name="startCalc" Header="Начать расчет" Click="startCalc_Click"/>
+                <MenuItem x:Name="clear" Header="Очистить" Click="clear_Click"/>
+            </MenuItem>
+            <MenuItem Header="Программа">
+                <MenuItem x:Name="about" Header="О программе" Click="about_Click"/>
+                <MenuItem x:Name="exit" Header="Выход" Click="exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="resOutput" IsReadOnly="True" HorizontalAlignment="Left" Margin="20,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="235"/>
+
+    </Grid>
+</Window>

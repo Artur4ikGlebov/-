@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "pr 1 arturio 01.01/1.0.0": {
+        "dependencies": {
+          "Lib_6": "1.0.0"
+        },
+        "runtime": {
+          "pr 1 arturio 01.01.dll": {}
+        }
+      },
+      "Lib_6/1.0.0": {
+        "runtime": {
+          "Lib_6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pr 1 arturio 01.01/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lib_6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
